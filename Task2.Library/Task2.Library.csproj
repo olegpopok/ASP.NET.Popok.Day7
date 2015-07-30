@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5DEF9DE8-E6A8-4A09-A32D-A9AA8BBF4291}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{56D6F633-B321-4984-82FF-AC8A24B5E56D}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task1.Console</RootNamespace>
-    <AssemblyName>Task1.Console</AssemblyName>
+    <RootNamespace>Task2.Library</RootNamespace>
+    <AssemblyName>Task2.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,25 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="FibonacciNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Task1.Library\Task1.Library.csproj">
-      <Project>{0461c7be-bea2-404b-8355-c128060b7167}</Project>
-      <Name>Task1.Library</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Task2.Library\Task2.Library.csproj">
-      <Project>{56d6f633-b321-4984-82ff-ac8a24b5e56d}</Project>
-      <Name>Task2.Library</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Task3.Library\Task3.Library.csproj">
-      <Project>{f0f11238-4760-49cf-bbf6-a4e93aa73990}</Project>
-      <Name>Task3.Library</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

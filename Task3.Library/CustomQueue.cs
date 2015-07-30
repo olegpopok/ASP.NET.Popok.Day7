@@ -142,7 +142,6 @@ namespace Task3.Library
                 _version = _queue._version;
                 _index = -1;
                 _currentElement = default(T);
-
             }
 
             public bool MoveNext()

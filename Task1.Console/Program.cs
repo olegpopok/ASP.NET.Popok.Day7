@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Task1.Library;
 using Task3.Library;
+using Task2.Library;
 
 namespace Task1.Console
 {
@@ -36,8 +37,21 @@ namespace Task1.Console
             queue.DeQueue();
             WriteQueue(queue);
             
+
             System.Console.ReadKey();
 
+            foreach(int number in FibonacciNumbers.GetNubers(10))
+            {
+                System.Console.WriteLine(number);
+            }
+
+            System.Console.ReadKey();
+            foreach (int number in FibonacciNumbers.GetNubers(5))
+            {
+                System.Console.WriteLine(number);
+            }
+
+            System.Console.ReadKey();
         }
 
         private static void WriteQueue<T>(CustomQueue<T> queue)
@@ -47,5 +61,6 @@ namespace Task1.Console
                 System.Console.WriteLine(q.ToString());
             }
         }
+
     }
 }
