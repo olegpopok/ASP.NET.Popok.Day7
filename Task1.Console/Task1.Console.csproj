@@ -52,6 +52,10 @@
       <Project>{0461c7be-bea2-404b-8355-c128060b7167}</Project>
       <Name>Task1.Library</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Task3.Library\Task3.Library.csproj">
+      <Project>{f0f11238-4760-49cf-bbf6-a4e93aa73990}</Project>
+      <Name>Task3.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

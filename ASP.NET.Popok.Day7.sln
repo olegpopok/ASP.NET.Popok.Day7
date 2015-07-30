@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.Console", "Task1.Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Library", "Task4.Librarry\Task4.Library.csproj", "{EF19A545-CF15-486F-8BBC-A22EC388EA8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Test", "Task4.Test\Task4.Test.csproj", "{C2C86F65-CAE8-4BF5-9B93-26D5E514F23E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Tests", "Task4.Test\Task4.Tests.csproj", "{C2C86F65-CAE8-4BF5-9B93-26D5E514F23E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3.Library", "Task3.Library\Task3.Library.csproj", "{F0F11238-4760-49CF-BBF6-A4E93AA73990}"
 EndProject

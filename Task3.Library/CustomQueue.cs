@@ -145,12 +145,6 @@ namespace Task3.Library
 
             }
 
-            void IDisposable.Dispose()
-            {
-                _index = -2;
-                _currentElement = default(T);
-            }
-
             public bool MoveNext()
             {
                 if (_version != _queue._version)
@@ -200,6 +194,20 @@ namespace Task3.Library
                 }
                 _index = -1;
                 _currentElement = default(T);
+            }
+
+            void IDisposable.Dispose()
+            {
+                _index = -2;
+                _currentElement = default(T);
+            }
+
+            Object IEnumerator.Current
+            {
+                get 
+                {
+                    return Current;
+                }
             }
         }
     }
