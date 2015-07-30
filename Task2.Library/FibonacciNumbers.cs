@@ -14,6 +14,19 @@ namespace Task2.Library
             {
                 throw new ArgumentException("n");
             }
+
+            yield return 0;
+            if (n == 1)
+            {
+                yield break;
+            }
+
+            yield return 1;
+            if (n == 2)
+            {
+                yield break;
+            }
+
             int f0 = 0, f1 = 1, count = 0;
             while (count < n)
             {
@@ -23,6 +36,7 @@ namespace Task2.Library
                 f1 = temp;
                 yield return f1;
             }
+
             yield break;
         }
     }
